@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/editbtn"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar" />
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="293dp"
+        android:layout_height="155dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include"
+        app:srcCompat="@drawable/fb" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="@string/name"
+        android:inputType="textPersonName"
+        android:textSize="21sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img1" />
+
+    <RatingBar
+        android:id="@+id/rateus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:contentDescription="Rate us"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/typeFeedback"
+        android:layout_width="311dp"
+        android:layout_height="131dp"
+        android:hint="@string/typeFeedback"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rateview" />
+
+    <Button
+        android:id="@+id/sendbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="10dp"
+        android:text="Send"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:backgroundTint="#F4D300"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/typeFeedback" />
+
+    <Button
+        android:id="@+id/viewmy"
+        android:layout_width="97dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="view"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:backgroundTint="#F4D300"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sendbtn" />
+
+    <Button
+        android:id="@+id/viewbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:text="View all"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:backgroundTint="#F4D300"
+        app:layout_constraintStart_toEndOf="@+id/sendbtn"
+        app:layout_constraintTop_toBottomOf="@+id/typeFeedback" />
+
+    <Button
+        android:id="@+id/deletebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:text="DELETE"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:backgroundTint="#F4D300"
+        app:layout_constraintBaseline_toBaselineOf="@+id/viewmy"
+        app:layout_constraintStart_toEndOf="@+id/viewmy" />
+
+    <TextView
+        android:id="@+id/rateview"
+        android:layout_width="313dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="11dp"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rateus" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

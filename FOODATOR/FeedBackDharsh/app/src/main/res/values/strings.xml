@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FeedBackDharsh</string>
+    <string name="name">Type your name</string>
+    <string name="typeFeedback">Type your feedbacks here...</string>
+    <string name="cusname">CustomerName</string>
+    <string name="fbview">feedbacks</string>
+    <string name="rateview">rate</string>
+    <string name="fdid">Enter the feedback number here</string>
+    <string name="fdid2">FeedBack Number?</string>
+    <string name="idV">Feedback number?</string>
+</resources>
