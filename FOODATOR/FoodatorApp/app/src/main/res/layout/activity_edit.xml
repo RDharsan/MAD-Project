@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="372dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Contact iInformation"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/l5"
+        android:layout_width="387dp"
+        android:layout_height="515dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:ignore="MissingConstraints">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="116dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="59dp"
+                android:layout_height="76dp"
+                android:src="@drawable/pin"
+                tools:ignore="MissingConstraints"></ImageView>
+
+            <EditText
+                android:id="@+id/id"
+                android:layout_width="315dp"
+                android:layout_height="76dp"
+                android:hint="Reservation Code"
+                android:inputType="text"
+                tools:ignore="MissingConstraints"></EditText>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="116dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="59dp"
+                android:layout_height="76dp"
+                android:src="@drawable/user"
+                tools:ignore="MissingConstraints"></ImageView>
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="315dp"
+                android:layout_height="76dp"
+                android:hint="User Name"
+                android:inputType="text"
+                tools:ignore="MissingConstraints"></EditText>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:orientation="horizontal">
+
+            <ImageView
+
+                android:layout_width="59dp"
+                android:layout_height="76dp"
+                android:src="@drawable/phone"
+                tools:ignore="MissingConstraints"></ImageView>
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="315dp"
+                android:layout_height="76dp"
+                android:hint="Phone Number"
+                android:inputType="text"
+                tools:ignore="MissingConstraints"></EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="94dp"
+            android:orientation="horizontal">
+
+            <ImageView
+
+                android:layout_width="59dp"
+                android:layout_height="76dp"
+                android:src="@drawable/mail"
+                tools:ignore="MissingConstraints"></ImageView>
+
+
+            <EditText
+                android:id="@+id/mail"
+                android:layout_width="315dp"
+                android:layout_height="76dp"
+                android:hint="Email"
+                android:inputType="text"
+                tools:ignore="MissingConstraints"></EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+
+                    android:layout_width="59dp"
+                    android:layout_height="76dp"
+                    android:src="@drawable/location"
+                    tools:ignore="MissingConstraints"></ImageView>
+
+                <EditText
+                    android:id="@+id/address"
+                    android:layout_width="315dp"
+                    android:layout_height="76dp"
+                    android:hint="Location"
+                    android:inputType="text"
+                    tools:ignore="MissingConstraints"></EditText>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt1"
+        android:layout_width="360dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginRight="37dp"
+        android:text=" Edit Details"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/l5"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/bt2"
+        android:layout_width="360dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginRight="37dp"
+        android:text="Cancel Reservation"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.414"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt1"
+        app:rippleColor="#AEA5A5"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/bt3"
+        android:layout_width="360dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginRight="37dp"
+        android:text="Back"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.341"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt2"
+        app:rippleColor="#AEA5A5"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

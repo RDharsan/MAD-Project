@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="367dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginRight="22dp"
+        android:text="Cancel"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="374dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Recommended pakages"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+    </TextView>
+
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="112dp"
+        android:layout_height="190dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:background="#F6F3D9"
+        android:orientation="vertical"
+        android:paddingTop="1dp"
+        android:paddingBottom="@dimen/cardview_default_radius"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints">
+
+
+        <ImageView
+            android:layout_width="89dp"
+            android:layout_height="103dp"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="20dp"
+            android:background="#ECE7BC"
+            android:src="@drawable/p1">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Party "
+            android:textAlignment="center"
+            android:textColor="#100C0C"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Rs 2000.00 "
+            android:textAlignment="center"
+            android:textColor="#ED1D0D"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/textView9"
+
+            android:src="@drawable/stars">
+
+        </ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l2"
+        android:layout_width="120dp"
+        android:layout_height="190dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:background="#F6F3D9"
+        android:orientation="vertical"
+        android:paddingTop="1dp"
+        android:paddingBottom="@dimen/cardview_default_radius"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/l4"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints">
+
+
+        <ImageView
+            android:layout_width="101dp"
+            android:layout_height="101dp"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="20dp"
+            android:background="#ECE7BC"
+            android:src="@drawable/p2">
+
+        </ImageView>
+
+
+        <TextView
+            android:id="@+id/wedding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Wedding "
+            android:textAlignment="center"
+            android:textColor="#100C0C"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/price2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Rs 3000.00 "
+            android:textAlignment="center"
+            android:textColor="#ED1D0D"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView9"
+
+            android:src="@drawable/stars">
+
+        </ImageView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/l4"
+        android:layout_width="125dp"
+        android:layout_height="190dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="4dp"
+        android:background="#F6F3D9"
+        android:orientation="vertical"
+        android:paddingTop="1dp"
+        android:paddingBottom="@dimen/cardview_default_radius"
+        app:layout_constraintStart_toEndOf="@+id/l1"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints">
+
+
+        <ImageView
+            android:layout_width="101dp"
+            android:layout_height="101dp"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="20dp"
+            android:background="#ECE7BC"
+            android:src="@drawable/p3">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/brunch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Brunch "
+            android:textAlignment="center"
+            android:textColor="#100C0C"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/price3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Rs 1500.00 "
+            android:textAlignment="center"
+            android:textColor="#ED1D0D"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/textView9"
+
+            android:src="@drawable/stars">
+
+        </ImageView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="377dp"
+        android:layout_height="369dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#F6F3D9"
+        android:orientation="vertical"
+        android:paddingTop="30dp"
+        android:paddingBottom="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/l4"
+        tools:ignore="MissingConstraints">
+
+
+        <TextView
+            android:id="@+id/pname1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Food Package"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"></TextView>
+
+        <EditText
+            android:id="@+id/pname2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Ex: Party"
+            android:inputType="text"
+            android:textColorHighlight="@color/gradientEndColor"
+            android:textColorLink="@color/gradientEndColor"
+            android:textCursorDrawable="@color/design_default_color_secondary"></EditText>
+
+        <TextView
+            android:id="@+id/date1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Date"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"></TextView>
+
+        <EditText
+            android:id="@+id/date2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="21/09/2021"
+            android:inputType="text"
+            android:textColorLink="@color/gradientEndColor"></EditText>
+
+        <TextView
+            android:id="@+id/time1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Time"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"></TextView>
+
+        <EditText
+            android:id="@+id/time2"
+            android:layout_width="390dp"
+            android:layout_height="59dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="24:30"
+            android:inputType="text"
+            android:textColorLink="@color/gradientEndColor"></EditText>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="366dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginRight="22dp"
+        android:text="Next"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
