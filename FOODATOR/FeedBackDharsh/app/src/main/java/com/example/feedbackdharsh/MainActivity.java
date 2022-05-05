@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         ratebar = findViewById(R.id.rateus);
         txtfeedback = (EditText) findViewById(R.id.typeFeedback);
 
-
+        // halo prands
         btnSendfb = (Button) findViewById(R.id.sendbtn);
         btnView = (Button) findViewById(R.id.viewbtn);
         btndelete=(Button)findViewById(R.id.deletebtn);
