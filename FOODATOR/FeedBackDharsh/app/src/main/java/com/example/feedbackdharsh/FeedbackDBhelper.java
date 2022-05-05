@@ -95,4 +95,6 @@ public class FeedbackDBhelper extends SQLiteOpenHelper {
         return rate;
     }
 }
-//travee s the apple pie
+/
+/
+//,hbkjhvl
