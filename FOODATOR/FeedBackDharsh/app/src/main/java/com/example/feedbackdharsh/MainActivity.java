@@ -17,6 +17,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+    //feedback
+    System.out.println("hhdhd");
     FeedbackDBhelper myDB;
     TextView rateview;
     EditText txtname, txtfeedback,btnedit3;
