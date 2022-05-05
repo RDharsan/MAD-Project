@@ -19,6 +19,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
     //feedback
     System.out.println("hhdhd");
+    //hbhbvhhvv
     FeedbackDBhelper myDB;
     TextView rateview;
     EditText txtname, txtfeedback,btnedit3;
@@ -181,5 +182,9 @@ public class MainActivity extends AppCompatActivity {
         builder.show();
     }
 }
+<<<<<<< HEAD
 
 //hcybyee
+=======
+//dashhhhhhh mari oru mana nilamai
+>>>>>>> c4d0800f78b64b71e3d7dac2b9ff921a55852e6a
